@@ -1,0 +1,18 @@
+.scroll {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.scroll-right {
+    position: absolute;
+    top: 320px;
+    right: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .scroll-right {
+    right: 12px;
+}
+}

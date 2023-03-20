@@ -1,0 +1,84 @@
+.tv-shows {
+    width: 420px;
+    height: 600px;
+    position: relative;
+    cursor: pointer;
+}
+
+.card-img-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.card-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.card-description-tv {
+    position: absolute;
+    top: 510px;
+    left: 25px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tv-shows:hover .card-description-tv {
+    opacity: 1;
+}
+
+.card-description-tv h3 {
+    max-width: 90px;
+    height: auto;
+    padding: 2px;
+    font-size: 12px;
+    color: blue;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgb(0 0 0 / 0.2);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-description-tv h3:hover {
+    background-color: red;
+}
+
+.card-ratings img {
+    width: 15px;
+}
+
+.card-description-tv h1 {
+    font-size: 30px;
+    margin-top: -1px;
+}
+
+.card-description-tv h2 {
+    font-size: 22px;
+    margin-top: -10px;
+}
+
+.card-description-tv h2 span img {
+    vertical-align: middle;
+}
+
+.title {
+    margin-bottom: -13px;
+}
+
+@media only screen and (max-width: 600px) {
+    .tv-shows {
+        width: 220px;
+        height: 300px;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,133 @@
+.slider-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform ease-out 0.5s;
+}
+
+.saviour-image-container {
+    width: 40%;
+    height: 91.5%;
+    position: absolute;
+    left: 670px;
+    top: 50px;
+}
+
+.slider-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.slider-container .next-btn {
+    position: absolute;
+    top: 45%;
+    right: 0px;
+    width: 100px;
+    height: 50px;
+    padding: auto;
+    cursor: pointer;
+}
+
+.slider-container .prev-btn {
+    position: absolute;
+    top: 45%;
+    left: 15px;
+    width: 100px;
+    height: 50px;
+    padding: auto;
+    cursor: pointer;
+}
+
+.recomended-description {
+    width: 550px;
+    height: 350px;
+    position: absolute;
+    top: 295px;
+    left: 130px;
+    color: white;
+    /* border: 1px solid white; */
+}
+
+.recomended-description,
+h1,
+p,
+button {
+    margin: 20px 0;
+}
+
+.recomended-description p {
+    white-space: initial
+}
+
+.recomended-description h1 {
+    font-size: 40px;
+    white-space: initial;
+}
+
+.recomended-description button {
+    padding: 10px 25px;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.recomended-description button:hover {
+    background-color: #1d1d1d
+}
+
+
+@media only screen and (max-width: 600px) {
+    .recomended-description {
+        width: 300px;
+        height: 340px;
+        position: absolute;
+        top: 630px;
+        left: 100px;
+        color: white;
+        font-size: 14px;
+    }
+
+    .recomended-description,
+    .ratings,
+    h1,
+    p,
+    button {
+        margin: 10px 0;
+    }
+
+    .recomended-description h1 {
+        font-size: 30px;
+        white-space: initial
+    }
+
+    .recomended-description button {
+        width: 120px;
+        height: 40px;
+    }
+
+    .saviour-image-container {
+        width: 100%;
+        height: 100%;
+        position: none;
+        left: 0;
+        top: 0;
+    }
+
+    .saviour-image-container img {
+        object-fit: cover;
+    }
+
+    .slider-container .next-btn {
+        display: none;
+    }
+
+    .slider-container .prev-btn {
+        display: none;
+    }
+
+}
